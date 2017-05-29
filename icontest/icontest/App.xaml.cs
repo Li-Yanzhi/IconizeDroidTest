@@ -18,7 +18,9 @@ namespace icontest
 
             tabbedPage.Children.Add(new MainPage());
 
-            MainPage = new IconNavigationPage(tabbedPage);
+            var navPage = new IconNavigationPage(tabbedPage);
+
+            MainPage = navPage;
         }
 
         protected override void OnStart()
